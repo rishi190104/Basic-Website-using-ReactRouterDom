@@ -1,6 +1,9 @@
-import React from "react";
+import React, {useEffect} from "react";
 
 export default function About() {
+    useEffect(() => {
+        document.title = 'About Page ';
+      }, []);
     return (
         <div className="py-16 bg-white">
             <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
